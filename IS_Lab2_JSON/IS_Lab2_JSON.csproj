@@ -8,7 +8,17 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="YamlDotNet" Version="13.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Assets\basic_config.yaml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="Assets\data.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Assets\data_mod.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

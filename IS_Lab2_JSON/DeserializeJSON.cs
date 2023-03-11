@@ -10,6 +10,7 @@ public class DeserializeJSON
     {
         Console.WriteLine("let's deserialize something");
         string jsonString = File.ReadAllText(file);
+        if()
         this.data = JsonSerializer.Deserialize<List<JST>>(jsonString)!;
     }
 
